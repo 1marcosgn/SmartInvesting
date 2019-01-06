@@ -11,7 +11,6 @@
 		7F11EDC121E1B0F0006BBF21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EDBF21E1B0F0006BBF21 /* Main.storyboard */; };
 		7F11EDC321E1B0F2006BBF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */; };
 		7F11EDC621E1B0F2006BBF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EDC421E1B0F2006BBF21 /* LaunchScreen.storyboard */; };
-		7F11EDD121E1B0F2006BBF21 /* SmartInvestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDD021E1B0F2006BBF21 /* SmartInvestingTests.swift */; };
 		7F11EDEE21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDE821E1B326006BBF21 /* AchievementsPresenter.swift */; };
 		7F11EDEF21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDE821E1B326006BBF21 /* AchievementsPresenter.swift */; };
 		7F11EDF021E1B326006BBF21 /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDE921E1B326006BBF21 /* AchievementsRouter.swift */; };
@@ -22,6 +21,21 @@
 		7F11EDF521E1B326006BBF21 /* AchievementsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEB21E1B326006BBF21 /* AchievementsProtocols.swift */; };
 		7F11EDF621E1B326006BBF21 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEC21E1B326006BBF21 /* AchievementsInteractor.swift */; };
 		7F11EDF721E1B326006BBF21 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEC21E1B326006BBF21 /* AchievementsInteractor.swift */; };
+		7F11EDFC21E1B5BD006BBF21 /* AchievementProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDFB21E1B5BD006BBF21 /* AchievementProtocolTests.swift */; };
+		7F11EDFF21E1B8AE006BBF21 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDFE21E1B8AE006BBF21 /* Achievement.swift */; };
+		7F11EE0021E1B8AE006BBF21 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDFE21E1B8AE006BBF21 /* Achievement.swift */; };
+		7F11EE0221E1B913006BBF21 /* AchievementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE0121E1B913006BBF21 /* AchievementTests.swift */; };
+		7F11EE0421E1BA4C006BBF21 /* AchievementsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE0321E1BA4C006BBF21 /* AchievementsFactory.swift */; };
+		7F11EE0521E1BA4C006BBF21 /* AchievementsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE0321E1BA4C006BBF21 /* AchievementsFactory.swift */; };
+		7F11EE0721E1BEDC006BBF21 /* AchievementsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE0621E1BEDC006BBF21 /* AchievementsFactoryTests.swift */; };
+		7F11EE0921E1C452006BBF21 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE0821E1C452006BBF21 /* Header.swift */; };
+		7F11EE0A21E1C452006BBF21 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE0821E1C452006BBF21 /* Header.swift */; };
+		7F11EE0C21E1C552006BBF21 /* HeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE0B21E1C552006BBF21 /* HeaderTests.swift */; };
+		7F11EE1121E1C7C1006BBF21 /* JSONFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE1021E1C7C0006BBF21 /* JSONFormatter.swift */; };
+		7F11EE1221E1C7C1006BBF21 /* JSONFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE1021E1C7C0006BBF21 /* JSONFormatter.swift */; };
+		7F11EE1521E1C7F4006BBF21 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EE1421E1C7F4006BBF21 /* achievements.json */; };
+		7F11EE1621E1C7F4006BBF21 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EE1421E1C7F4006BBF21 /* achievements.json */; };
+		7F11EE1821E1C84C006BBF21 /* JSONFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE1721E1C84C006BBF21 /* JSONFormatterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +56,22 @@
 		7F11EDC521E1B0F2006BBF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F11EDC721E1B0F2006BBF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F11EDCC21E1B0F2006BBF21 /* SmartInvestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartInvestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F11EDD021E1B0F2006BBF21 /* SmartInvestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartInvestingTests.swift; sourceTree = "<group>"; };
 		7F11EDD221E1B0F2006BBF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F11EDE821E1B326006BBF21 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		7F11EDE921E1B326006BBF21 /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
 		7F11EDEA21E1B326006BBF21 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		7F11EDEB21E1B326006BBF21 /* AchievementsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsProtocols.swift; sourceTree = "<group>"; };
 		7F11EDEC21E1B326006BBF21 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
+		7F11EDFB21E1B5BD006BBF21 /* AchievementProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementProtocolTests.swift; sourceTree = "<group>"; };
+		7F11EDFE21E1B8AE006BBF21 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		7F11EE0121E1B913006BBF21 /* AchievementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTests.swift; sourceTree = "<group>"; };
+		7F11EE0321E1BA4C006BBF21 /* AchievementsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsFactory.swift; sourceTree = "<group>"; };
+		7F11EE0621E1BEDC006BBF21 /* AchievementsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsFactoryTests.swift; sourceTree = "<group>"; };
+		7F11EE0821E1C452006BBF21 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		7F11EE0B21E1C552006BBF21 /* HeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTests.swift; sourceTree = "<group>"; };
+		7F11EE1021E1C7C0006BBF21 /* JSONFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFormatter.swift; sourceTree = "<group>"; };
+		7F11EE1421E1C7F4006BBF21 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		7F11EE1721E1C84C006BBF21 /* JSONFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFormatterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +113,9 @@
 		7F11EDBA21E1B0F0006BBF21 /* SmartInvesting */ = {
 			isa = PBXGroup;
 			children = (
+				7F11EE1321E1C7D2006BBF21 /* Resources */,
 				7F11EDFA21E1B394006BBF21 /* Utilities */,
+				7F11EDFD21E1B894006BBF21 /* Entities */,
 				7F11EDDB21E1B2DF006BBF21 /* Achievements */,
 				7F11EDBB21E1B0F0006BBF21 /* AppDelegate.swift */,
 				7F11EDBF21E1B0F0006BBF21 /* Main.storyboard */,
@@ -104,8 +129,12 @@
 		7F11EDCF21E1B0F2006BBF21 /* SmartInvestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				7F11EDD021E1B0F2006BBF21 /* SmartInvestingTests.swift */,
 				7F11EDD221E1B0F2006BBF21 /* Info.plist */,
+				7F11EDFB21E1B5BD006BBF21 /* AchievementProtocolTests.swift */,
+				7F11EE0121E1B913006BBF21 /* AchievementTests.swift */,
+				7F11EE0621E1BEDC006BBF21 /* AchievementsFactoryTests.swift */,
+				7F11EE0B21E1C552006BBF21 /* HeaderTests.swift */,
+				7F11EE1721E1C84C006BBF21 /* JSONFormatterTests.swift */,
 			);
 			path = SmartInvestingTests;
 			sourceTree = "<group>";
@@ -125,8 +154,27 @@
 		7F11EDFA21E1B394006BBF21 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7F11EE1021E1C7C0006BBF21 /* JSONFormatter.swift */,
+				7F11EE0321E1BA4C006BBF21 /* AchievementsFactory.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7F11EDFD21E1B894006BBF21 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7F11EDFE21E1B8AE006BBF21 /* Achievement.swift */,
+				7F11EE0821E1C452006BBF21 /* Header.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7F11EE1321E1C7D2006BBF21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F11EE1421E1C7F4006BBF21 /* achievements.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F11EDC621E1B0F2006BBF21 /* LaunchScreen.storyboard in Resources */,
+				7F11EE1521E1C7F4006BBF21 /* achievements.json in Resources */,
 				7F11EDC321E1B0F2006BBF21 /* Assets.xcassets in Resources */,
 				7F11EDC121E1B0F0006BBF21 /* Main.storyboard in Resources */,
 			);
@@ -220,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F11EE1621E1C7F4006BBF21 /* achievements.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,11 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F11EE0421E1BA4C006BBF21 /* AchievementsFactory.swift in Sources */,
+				7F11EE0921E1C452006BBF21 /* Header.swift in Sources */,
 				7F11EDF021E1B326006BBF21 /* AchievementsRouter.swift in Sources */,
 				7F11EDEE21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */,
+				7F11EDFF21E1B8AE006BBF21 /* Achievement.swift in Sources */,
 				7F11EDBC21E1B0F0006BBF21 /* AppDelegate.swift in Sources */,
 				7F11EDF621E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
 				7F11EDF221E1B326006BBF21 /* AchievementsViewController.swift in Sources */,
+				7F11EE1121E1C7C1006BBF21 /* JSONFormatter.swift in Sources */,
 				7F11EDF421E1B326006BBF21 /* AchievementsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,12 +297,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F11EE1221E1C7C1006BBF21 /* JSONFormatter.swift in Sources */,
+				7F11EE0721E1BEDC006BBF21 /* AchievementsFactoryTests.swift in Sources */,
 				7F11EDF721E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
+				7F11EDFC21E1B5BD006BBF21 /* AchievementProtocolTests.swift in Sources */,
 				7F11EDF321E1B326006BBF21 /* AchievementsViewController.swift in Sources */,
+				7F11EE0C21E1C552006BBF21 /* HeaderTests.swift in Sources */,
 				7F11EDF121E1B326006BBF21 /* AchievementsRouter.swift in Sources */,
+				7F11EE0A21E1C452006BBF21 /* Header.swift in Sources */,
+				7F11EE0521E1BA4C006BBF21 /* AchievementsFactory.swift in Sources */,
 				7F11EDEF21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */,
+				7F11EE0021E1B8AE006BBF21 /* Achievement.swift in Sources */,
+				7F11EE0221E1B913006BBF21 /* AchievementTests.swift in Sources */,
+				7F11EE1821E1C84C006BBF21 /* JSONFormatterTests.swift in Sources */,
 				7F11EDF521E1B326006BBF21 /* AchievementsProtocols.swift in Sources */,
-				7F11EDD121E1B0F2006BBF21 /* SmartInvestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
