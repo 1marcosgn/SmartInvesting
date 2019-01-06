@@ -16,6 +16,7 @@ class AchievementsRouter: AchievementsWireframeProtocol {
 
     static func createModule() -> UIViewController {
         let view = AchievementsViewController(nibName: "AchievementsViewController", bundle: Bundle.main)
+        
         let interactor = AchievementsInteractor()
         let router = AchievementsRouter()
         let presenter = AchievementsPresenter(interface: view, interactor: interactor, router: router)

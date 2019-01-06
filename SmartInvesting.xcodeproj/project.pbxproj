@@ -42,6 +42,7 @@
 		7FF751E521E1F2330062C600 /* AchievementsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E421E1F2330062C600 /* AchievementsRouterTests.swift */; };
 		7FF751E621E1F3150062C600 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751DD21E1ED6A0062C600 /* AchievementCell.swift */; };
 		7FF751E821E2923A0062C600 /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */; };
+		7FF751ED21E2BB940062C600 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751EC21E2BB940062C600 /* Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		7FF751E221E1EEB70062C600 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7FF751E421E1F2330062C600 /* AchievementsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouterTests.swift; sourceTree = "<group>"; };
 		7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
+		7FF751EC21E2BB940062C600 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +126,11 @@
 		7F11EDBA21E1B0F0006BBF21 /* SmartInvesting */ = {
 			isa = PBXGroup;
 			children = (
+				7FF751EB21E2A17A0062C600 /* Modules */,
 				7FF751E121E1ED780062C600 /* Cells */,
 				7F11EE1321E1C7D2006BBF21 /* Resources */,
 				7F11EDFA21E1B394006BBF21 /* Utilities */,
 				7F11EDFD21E1B894006BBF21 /* Entities */,
-				7F11EDDB21E1B2DF006BBF21 /* Achievements */,
 				7F11EDBB21E1B0F0006BBF21 /* AppDelegate.swift */,
 				7F11EDBF21E1B0F0006BBF21 /* Main.storyboard */,
 				7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */,
@@ -171,6 +173,7 @@
 			children = (
 				7F11EE1021E1C7C0006BBF21 /* JSONFormatter.swift */,
 				7F11EE0321E1BA4C006BBF21 /* AchievementsFactory.swift */,
+				7FF751EC21E2BB940062C600 /* Structs.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -199,6 +202,14 @@
 				7FF751DE21E1ED6A0062C600 /* AchievementCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		7FF751EB21E2A17A0062C600 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7F11EDDB21E1B2DF006BBF21 /* Achievements */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 			files = (
 				7F11EE0421E1BA4C006BBF21 /* AchievementsFactory.swift in Sources */,
 				7F11EE0921E1C452006BBF21 /* Header.swift in Sources */,
+				7FF751ED21E2BB940062C600 /* Structs.swift in Sources */,
 				7F11EDF021E1B326006BBF21 /* AchievementsRouter.swift in Sources */,
 				7F11EDEE21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */,
 				7F11EDFF21E1B8AE006BBF21 /* Achievement.swift in Sources */,

@@ -22,6 +22,7 @@ class AchievementsViewController: UITableViewController, AchievementsViewProtoco
                                           interactor: AchievementsInteractor(),
                                           router: AchievementsRouter())
         
+        configureHeader()
         configureTableView()
         setUpAchievementsTable()
     }
@@ -69,12 +70,27 @@ extension AchievementsViewController {
         /// TODO: ADD PLACE HOLDER IN THE CELL
         
         /// TODO: CATCH THE COMPLETION BLOCK AND THEN ONLY THEN UPDATE THE REST OF THE UI ELEMENTS IN THE CELL
+        cell.mainContainer.isHidden = false
         
         /// TODO: FIRST PRIORITY SET UP THE IMAGE
         
         /// TODO: IF THE 'accesible' PROPERTY IS DISABLED THEN CELL IS FADED IN GRAY AND NOT ENABLE FOR USER INTERACTION
         
+        cell.level.text = achievement.level
+        cell.progressLevel.text = String(achievement.progress) + "pts" //localize this string
+        cell.totalLevel.text = String(achievement.total) + "pts" //localize this string
+        
+        let theProgress: Float = Float(achievement.progress) / Float(achievement.total)
+        cell.updateProgressBarWith(theProgress)
+        
+        if !achievement.accessible {
+            cell.disableUI()
+        }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 240.0
     }
     
     /// TODO: REMOVE CELLS BELLOW LAST CELL
@@ -83,4 +99,23 @@ extension AchievementsViewController {
     
     /// TODO: IN THE CELL ... ROUND THE CORNERS
   
+}
+
+
+extension AchievementsViewController {
+    func configureHeader() {
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.barTintColor = Colors.stashPurple
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
+extension UINavigationController {
+    open override var preferredStatusBarStyle: UIStatusBarStyle {
+        return topViewController?.preferredStatusBarStyle ?? .default
+    }
 }
