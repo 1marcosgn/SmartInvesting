@@ -18,6 +18,8 @@ protocol AchievementsWireframeProtocol: class {
 protocol AchievementsPresenterProtocol: class {
 
     var interactor: AchievementsInteractorInputProtocol? { get set }
+    
+    func retrieveAchievements() -> [Achievement]?
 }
 
 //MARK: Interactor -
@@ -31,6 +33,7 @@ protocol AchievementsInteractorInputProtocol: class {
     var presenter: AchievementsInteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
+    func getAchievements() -> [Achievement]?
 }
 
 //MARK: View -

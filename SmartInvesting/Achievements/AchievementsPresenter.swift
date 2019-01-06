@@ -21,5 +21,8 @@ class AchievementsPresenter: AchievementsPresenterProtocol, AchievementsInteract
         self.interactor = interactor
         self.router = router
     }
-
+    
+    func retrieveAchievements() -> [Achievement]? {
+        return interactor?.getAchievements()
+    }
 }

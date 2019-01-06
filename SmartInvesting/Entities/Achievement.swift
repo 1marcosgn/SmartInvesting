@@ -22,7 +22,8 @@ class Achievement: AchievementProtocol {
         self.level = information["level"] as? String ?? ""
         self.progress = information["progress"] as? Int ?? 0
         self.total = information["total"] as? Int ?? 0
-        self.bg_image_url = information["bg_image_url"] as? URL
+        let url = information["bg_image_url"] as? String ?? ""
+        self.bg_image_url = URL(string: url)
         self.accessible = information["accessible"] as? Bool ?? false
     }
     
