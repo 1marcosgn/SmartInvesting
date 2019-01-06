@@ -1,37 +1,38 @@
 //
-//  AchievementTests.swift
+//  AchievementsInteractorTests.swift
 //  SmartInvestingTests
 //
-//  Created by Marcos Garcia on 1/5/19.
+//  Created by Marcos Garcia on 1/6/19.
 //  Copyright © 2019 Marcos Garcia. All rights reserved.
 //
 
 import XCTest
 
-class AchievementTests: XCTestCase {
+class AchievementsInteractorTests: XCTestCase {
 
-    func testAchievementClass_After_Initialization_With_Explicit_Properties_ShouldHave_Valid_Data() {
+    func test_getAchievements_ShouldReturn_Valid_Achievements_Array() {
         /// Given
-        var sut: Achievement?
-        let testUrl = URL(string: "https://cdn.zeplin.io/5a5f7e1b4f9f24b874e0f19f/screens/C850B103-B8C5-4518-8631-168BB42FFBBD.png")
+        let sut: AchievementsInteractor?
         
         /// When
-        sut = Achievement(id: 4, level: "1", progress: 10, total: 50, bg_image_url: testUrl!, accessible: true)
+        sut = AchievementsInteractor()
         
         /// Then
-        XCTAssertNotNil(sut, "Initialized Achievement class should not be nil")
-        XCTAssertEqual(sut?.id, 4, "Id should match")
+        XCTAssertNotNil(sut?.getAchievements(), "Achievements should not be nil")
+        XCTAssertEqual(sut?.getAchievements()?.count, 3, "The number of achievements should match")
     }
     
-    func testAchievementClass_After_Initialization_With_Dictionary_ShouldHave_Valid_Data() {
+    func test_getAchievements_ShouldReturn_Valid_Achievement() {
         /// Given
         var sut: Achievement?
+        let interactor = AchievementsInteractor()
         let testUrl = URL(string: "https://cdn.zeplin.io/5a5f7e1b4f9f24b874e0f19f/screens/C850B103-B8C5-4518-8631-168BB42FFBBD.png")
         
         /// When
-        sut = Achievement(AchievementTests.getMockDictionary())
+        sut = interactor.getAchievements()?.first
         
         /// Then
+        XCTAssertNotNil(sut, "Achievement should not be nil")
         XCTAssertNotNil(sut?.id, "ID should not be nil")
         XCTAssertEqual(sut?.id, 4, "ID should match with the value provided")
         
@@ -50,20 +51,5 @@ class AchievementTests: XCTestCase {
         XCTAssertNotNil(sut?.accessible, "accessible should not be nil")
         XCTAssertTrue((sut?.accessible)!, "Achievement should be accessible")
     }
-}
-
-extension AchievementTests {
-    /// Returns a mock dictionary with information to build an Achievement
-    class func getMockDictionary() -> [String: Any] {
-        var mockDictionary = [String: Any]()
-        
-        mockDictionary["id"] = 4
-        mockDictionary["level"] = "1"
-        mockDictionary["progress"] = 10
-        mockDictionary["total"] = 50
-        mockDictionary["bg_image_url"] = "https://cdn.zeplin.io/5a5f7e1b4f9f24b874e0f19f/screens/C850B103-B8C5-4518-8631-168BB42FFBBD.png"
-        mockDictionary["accessible"] = true
-        
-        return mockDictionary
-    }
+    
 }
