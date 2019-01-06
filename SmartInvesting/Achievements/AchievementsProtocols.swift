@@ -40,3 +40,12 @@ protocol AchievementsViewProtocol: class {
 
     /* Presenter -> ViewController */
 }
+
+protocol AchievementProtocol {
+    var id: Int { get set }
+    var level: String { get set }
+    var progress: Int { get set }
+    var total: Int { get set }
+    var bg_image_url: URL? { get set }
+    var accessible: Bool { get set }
+}
