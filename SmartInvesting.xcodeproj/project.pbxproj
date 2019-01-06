@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7F11EDBC21E1B0F0006BBF21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDBB21E1B0F0006BBF21 /* AppDelegate.swift */; };
-		7F11EDBE21E1B0F0006BBF21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDBD21E1B0F0006BBF21 /* ViewController.swift */; };
 		7F11EDC121E1B0F0006BBF21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EDBF21E1B0F0006BBF21 /* Main.storyboard */; };
 		7F11EDC321E1B0F2006BBF21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */; };
 		7F11EDC621E1B0F2006BBF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F11EDC421E1B0F2006BBF21 /* LaunchScreen.storyboard */; };
 		7F11EDD121E1B0F2006BBF21 /* SmartInvestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDD021E1B0F2006BBF21 /* SmartInvestingTests.swift */; };
+		7F11EDEE21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDE821E1B326006BBF21 /* AchievementsPresenter.swift */; };
+		7F11EDEF21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDE821E1B326006BBF21 /* AchievementsPresenter.swift */; };
+		7F11EDF021E1B326006BBF21 /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDE921E1B326006BBF21 /* AchievementsRouter.swift */; };
+		7F11EDF121E1B326006BBF21 /* AchievementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDE921E1B326006BBF21 /* AchievementsRouter.swift */; };
+		7F11EDF221E1B326006BBF21 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEA21E1B326006BBF21 /* AchievementsViewController.swift */; };
+		7F11EDF321E1B326006BBF21 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEA21E1B326006BBF21 /* AchievementsViewController.swift */; };
+		7F11EDF421E1B326006BBF21 /* AchievementsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEB21E1B326006BBF21 /* AchievementsProtocols.swift */; };
+		7F11EDF521E1B326006BBF21 /* AchievementsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEB21E1B326006BBF21 /* AchievementsProtocols.swift */; };
+		7F11EDF621E1B326006BBF21 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEC21E1B326006BBF21 /* AchievementsInteractor.swift */; };
+		7F11EDF721E1B326006BBF21 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EDEC21E1B326006BBF21 /* AchievementsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +37,6 @@
 /* Begin PBXFileReference section */
 		7F11EDB821E1B0F0006BBF21 /* SmartInvesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartInvesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F11EDBB21E1B0F0006BBF21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F11EDBD21E1B0F0006BBF21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F11EDC021E1B0F0006BBF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F11EDC521E1B0F2006BBF21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +44,11 @@
 		7F11EDCC21E1B0F2006BBF21 /* SmartInvestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartInvestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F11EDD021E1B0F2006BBF21 /* SmartInvestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartInvestingTests.swift; sourceTree = "<group>"; };
 		7F11EDD221E1B0F2006BBF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F11EDE821E1B326006BBF21 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
+		7F11EDE921E1B326006BBF21 /* AchievementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouter.swift; sourceTree = "<group>"; };
+		7F11EDEA21E1B326006BBF21 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		7F11EDEB21E1B326006BBF21 /* AchievementsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsProtocols.swift; sourceTree = "<group>"; };
+		7F11EDEC21E1B326006BBF21 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +90,9 @@
 		7F11EDBA21E1B0F0006BBF21 /* SmartInvesting */ = {
 			isa = PBXGroup;
 			children = (
+				7F11EDFA21E1B394006BBF21 /* Utilities */,
+				7F11EDDB21E1B2DF006BBF21 /* Achievements */,
 				7F11EDBB21E1B0F0006BBF21 /* AppDelegate.swift */,
-				7F11EDBD21E1B0F0006BBF21 /* ViewController.swift */,
 				7F11EDBF21E1B0F0006BBF21 /* Main.storyboard */,
 				7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */,
 				7F11EDC421E1B0F2006BBF21 /* LaunchScreen.storyboard */,
@@ -94,6 +108,25 @@
 				7F11EDD221E1B0F2006BBF21 /* Info.plist */,
 			);
 			path = SmartInvestingTests;
+			sourceTree = "<group>";
+		};
+		7F11EDDB21E1B2DF006BBF21 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				7F11EDE821E1B326006BBF21 /* AchievementsPresenter.swift */,
+				7F11EDE921E1B326006BBF21 /* AchievementsRouter.swift */,
+				7F11EDEA21E1B326006BBF21 /* AchievementsViewController.swift */,
+				7F11EDEB21E1B326006BBF21 /* AchievementsProtocols.swift */,
+				7F11EDEC21E1B326006BBF21 /* AchievementsInteractor.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		7F11EDFA21E1B394006BBF21 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F11EDBE21E1B0F0006BBF21 /* ViewController.swift in Sources */,
+				7F11EDF021E1B326006BBF21 /* AchievementsRouter.swift in Sources */,
+				7F11EDEE21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */,
 				7F11EDBC21E1B0F0006BBF21 /* AppDelegate.swift in Sources */,
+				7F11EDF621E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
+				7F11EDF221E1B326006BBF21 /* AchievementsViewController.swift in Sources */,
+				7F11EDF421E1B326006BBF21 /* AchievementsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F11EDF721E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
+				7F11EDF321E1B326006BBF21 /* AchievementsViewController.swift in Sources */,
+				7F11EDF121E1B326006BBF21 /* AchievementsRouter.swift in Sources */,
+				7F11EDEF21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */,
+				7F11EDF521E1B326006BBF21 /* AchievementsProtocols.swift in Sources */,
 				7F11EDD121E1B0F2006BBF21 /* SmartInvestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
