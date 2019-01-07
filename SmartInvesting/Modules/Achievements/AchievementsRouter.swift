@@ -15,7 +15,7 @@ class AchievementsRouter: AchievementsWireframeProtocol {
     weak var viewController: UIViewController?
 
     static func createModule() -> UIViewController {
-        let view = AchievementsViewController(nibName: "AchievementsViewController", bundle: Bundle.main)
+        let view = AchievementsViewController(nibName: Constants.achievementsViewController, bundle: Bundle.main)
         
         let interactor = AchievementsInteractor()
         let router = AchievementsRouter()

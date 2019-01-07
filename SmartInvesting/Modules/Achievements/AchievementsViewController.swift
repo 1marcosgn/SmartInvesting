@@ -44,8 +44,8 @@ extension AchievementsViewController {
 extension AchievementsViewController {
     
     func configureTableView() {
-        let nib = UINib(nibName: "AchievementCell", bundle: .main)
-        tableView.register(nib, forCellReuseIdentifier: "achievementCell")
+        let nib = UINib(nibName: Constants.nibAchievementCell, bundle: .main)
+        tableView.register(nib, forCellReuseIdentifier: Constants.achievementCell)
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
     }
@@ -60,7 +60,7 @@ extension AchievementsViewController {
     
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "achievementCell", for: indexPath) as! AchievementCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.achievementCell, for: indexPath) as! AchievementCell
         
         let achievement = achievements[indexPath.item]
         

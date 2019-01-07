@@ -18,13 +18,13 @@ class Achievement: AchievementProtocol {
     
     /// Initializer that receives as a parameter a Dictionary with information required to build an Achievement
     init(_ information: [String: Any]) {
-        self.id = information["id"] as? Int ?? 0
-        self.level = information["level"] as? String ?? ""
-        self.progress = information["progress"] as? Int ?? 0
-        self.total = information["total"] as? Int ?? 0
-        let url = information["bg_image_url"] as? String ?? ""
+        self.id = information[Constants.id] as? Int ?? 0
+        self.level = information[Constants.level] as? String ?? ""
+        self.progress = information[Constants.progress] as? Int ?? 0
+        self.total = information[Constants.total] as? Int ?? 0
+        let url = information[Constants.bg_image_url] as? String ?? ""
         self.bg_image_url = URL(string: url)
-        self.accessible = information["accessible"] as? Bool ?? false
+        self.accessible = information[Constants.accessible] as? Bool ?? false
     }
     
     /// Initializer that receives as a parameter each property to build an Achievement

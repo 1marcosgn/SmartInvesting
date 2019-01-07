@@ -16,8 +16,8 @@ class Header {
     }
     
     func getTitle() -> String? {
-        let overview = self.information["overview"] as? [String: String]
-        let title = overview?["title"]
+        let overview = self.information[Constants.overview] as? [String: String]
+        let title = overview?[Constants.title]
         return title
     }
 }

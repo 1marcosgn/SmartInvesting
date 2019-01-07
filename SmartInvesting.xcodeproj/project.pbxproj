@@ -38,7 +38,6 @@
 		7F11EE1821E1C84C006BBF21 /* JSONFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE1721E1C84C006BBF21 /* JSONFormatterTests.swift */; };
 		7FF751DF21E1ED6A0062C600 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751DD21E1ED6A0062C600 /* AchievementCell.swift */; };
 		7FF751E021E1ED6A0062C600 /* AchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751DE21E1ED6A0062C600 /* AchievementCell.xib */; };
-		7FF751E321E1EEB70062C600 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E221E1EEB70062C600 /* TableViewController.swift */; };
 		7FF751E521E1F2330062C600 /* AchievementsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E421E1F2330062C600 /* AchievementsRouterTests.swift */; };
 		7FF751E621E1F3150062C600 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751DD21E1ED6A0062C600 /* AchievementCell.swift */; };
 		7FF751E821E2923A0062C600 /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */; };
@@ -85,7 +84,6 @@
 		7F11EE1721E1C84C006BBF21 /* JSONFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFormatterTests.swift; sourceTree = "<group>"; };
 		7FF751DD21E1ED6A0062C600 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 		7FF751DE21E1ED6A0062C600 /* AchievementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCell.xib; sourceTree = "<group>"; };
-		7FF751E221E1EEB70062C600 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7FF751E421E1F2330062C600 /* AchievementsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouterTests.swift; sourceTree = "<group>"; };
 		7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
 		7FF751EC21E2BB940062C600 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 				7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */,
 				7F11EDC421E1B0F2006BBF21 /* LaunchScreen.storyboard */,
 				7F11EDC721E1B0F2006BBF21 /* Info.plist */,
-				7FF751E221E1EEB70062C600 /* TableViewController.swift */,
 			);
 			path = SmartInvesting;
 			sourceTree = "<group>";
@@ -365,7 +362,6 @@
 				7F11EDFF21E1B8AE006BBF21 /* Achievement.swift in Sources */,
 				7F11EDBC21E1B0F0006BBF21 /* AppDelegate.swift in Sources */,
 				7F11EDF621E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
-				7FF751E321E1EEB70062C600 /* TableViewController.swift in Sources */,
 				7F11EDF221E1B326006BBF21 /* AchievementsViewController.swift in Sources */,
 				7FF751DF21E1ED6A0062C600 /* AchievementCell.swift in Sources */,
 				7F11EE1121E1C7C1006BBF21 /* JSONFormatter.swift in Sources */,

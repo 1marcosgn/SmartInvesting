@@ -17,12 +17,12 @@ class AchievementsInteractor: AchievementsInteractorInputProtocol {
     func getAchievements() -> [Achievement]? {
         
         /// Get the information from local json
-        guard let dictionaryFromFile = JSONFormatter.parseWith(file: "achievements") else {
+        guard let dictionaryFromFile = JSONFormatter.parseWith(file: Constants.achievements) else {
             return nil
         }
         
         /// Get the dictionary with the achievements
-        guard let achievementsDictionary = dictionaryFromFile["achievements"] as? [[String : Any]] else {
+        guard let achievementsDictionary = dictionaryFromFile[Constants.achievements] as? [[String : Any]] else {
             return nil
         }
         
@@ -37,7 +37,7 @@ class AchievementsInteractor: AchievementsInteractorInputProtocol {
     
     func getHeader() -> Header? {
         /// Get the information from local json
-        guard let dictionaryFromFile = JSONFormatter.parseWith(file: "achievements") else {
+        guard let dictionaryFromFile = JSONFormatter.parseWith(file: Constants.achievements) else {
             return nil
         }
         
