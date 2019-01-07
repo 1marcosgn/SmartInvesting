@@ -2,7 +2,7 @@
 
 This project implements a Stash Coach feature it displays to the user a list of achievements they can reach.  
 
-#### Implementation
+### Implementation
 I have used VIPER architecture to acomplish this goal, the Class Diagram can be reviewed here:
 https://drive.google.com/file/d/1DT0nOjLs2SzYLFIBZ87HzLkn_Q4lv7ct/view?usp=sharing
 
@@ -17,7 +17,7 @@ https://drive.google.com/file/d/1DT0nOjLs2SzYLFIBZ87HzLkn_Q4lv7ct/view?usp=shari
 - The presenter returns the information to the view controller
 - The view controller updates the Table View and the cells with the Array of achievements.
 
-#### Design
+### Design
 
 After the app gets launched the Router Creates an Instance of the Module:
 
@@ -34,7 +34,7 @@ Using a Factory Pattern we create an Array of Achievements
 ![screen shot 2019-01-06 at 6 12 31 pm](https://user-images.githubusercontent.com/6865674/50745369-a6c74580-11de-11e9-8f00-295b2e6798da.png)
 
 
-#### Data
+### Data
 
 The source data is a local file, contains a set of JSON Objects:
 
@@ -62,7 +62,7 @@ This Project has been developed using a TDD methodology, that means we have almo
 | --- | 
 | ![screen shot 2019-01-06 at 5 50 40 pm](https://user-images.githubusercontent.com/6865674/50745530-8cda3280-11df-11e9-9a22-b1dcb081dff3.png) | 
 
-## Third Party Frameworks
+### Third Party Frameworks
 
 - SDWebImage
 
@@ -70,7 +70,7 @@ This Project has been developed using a TDD methodology, that means we have almo
 - TDD: Test driven development to ensure the low rates of issues and fullfillment of the requirements 
 - VIPER Design Pattern For iOS
 
-## Screenshots
+### Screenshots
 
 | Launch Screen | Loading Achievements | Single Achievement Loaded |
 | --- | --- | --- |
