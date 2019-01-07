@@ -38,10 +38,15 @@
 		7F11EE1821E1C84C006BBF21 /* JSONFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F11EE1721E1C84C006BBF21 /* JSONFormatterTests.swift */; };
 		7FF751DF21E1ED6A0062C600 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751DD21E1ED6A0062C600 /* AchievementCell.swift */; };
 		7FF751E021E1ED6A0062C600 /* AchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751DE21E1ED6A0062C600 /* AchievementCell.xib */; };
-		7FF751E321E1EEB70062C600 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E221E1EEB70062C600 /* TableViewController.swift */; };
 		7FF751E521E1F2330062C600 /* AchievementsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E421E1F2330062C600 /* AchievementsRouterTests.swift */; };
 		7FF751E621E1F3150062C600 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751DD21E1ED6A0062C600 /* AchievementCell.swift */; };
 		7FF751E821E2923A0062C600 /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */; };
+		7FF751ED21E2BB940062C600 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751EC21E2BB940062C600 /* Structs.swift */; };
+		7FF751F121E2C9590062C600 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF751F021E2C9590062C600 /* SDWebImage.framework */; };
+		7FF751F621E2E0850062C600 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF751F021E2C9590062C600 /* SDWebImage.framework */; };
+		7FF751F721E2E0C00062C600 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751EC21E2BB940062C600 /* Structs.swift */; };
+		7FF751FB21E2E5830062C600 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751FE21E2E5830062C600 /* Localizable.strings */; };
+		7FF751FC21E2E5830062C600 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751FE21E2E5830062C600 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +85,11 @@
 		7F11EE1721E1C84C006BBF21 /* JSONFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFormatterTests.swift; sourceTree = "<group>"; };
 		7FF751DD21E1ED6A0062C600 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 		7FF751DE21E1ED6A0062C600 /* AchievementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementCell.xib; sourceTree = "<group>"; };
-		7FF751E221E1EEB70062C600 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		7FF751E421E1F2330062C600 /* AchievementsRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRouterTests.swift; sourceTree = "<group>"; };
 		7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
+		7FF751EC21E2BB940062C600 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		7FF751F021E2C9590062C600 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		7FF751FD21E2E5830062C600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF751F121E2C9590062C600 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF751F621E2E0850062C600 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +118,7 @@
 				7F11EDBA21E1B0F0006BBF21 /* SmartInvesting */,
 				7F11EDCF21E1B0F2006BBF21 /* SmartInvestingTests */,
 				7F11EDB921E1B0F0006BBF21 /* Products */,
+				7FF751EF21E2C9590062C600 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,17 +134,17 @@
 		7F11EDBA21E1B0F0006BBF21 /* SmartInvesting */ = {
 			isa = PBXGroup;
 			children = (
+				7FF751EB21E2A17A0062C600 /* Modules */,
 				7FF751E121E1ED780062C600 /* Cells */,
 				7F11EE1321E1C7D2006BBF21 /* Resources */,
 				7F11EDFA21E1B394006BBF21 /* Utilities */,
 				7F11EDFD21E1B894006BBF21 /* Entities */,
-				7F11EDDB21E1B2DF006BBF21 /* Achievements */,
 				7F11EDBB21E1B0F0006BBF21 /* AppDelegate.swift */,
 				7F11EDBF21E1B0F0006BBF21 /* Main.storyboard */,
 				7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */,
 				7F11EDC421E1B0F2006BBF21 /* LaunchScreen.storyboard */,
 				7F11EDC721E1B0F2006BBF21 /* Info.plist */,
-				7FF751E221E1EEB70062C600 /* TableViewController.swift */,
+				7FF751FE21E2E5830062C600 /* Localizable.strings */,
 			);
 			path = SmartInvesting;
 			sourceTree = "<group>";
@@ -171,6 +181,7 @@
 			children = (
 				7F11EE1021E1C7C0006BBF21 /* JSONFormatter.swift */,
 				7F11EE0321E1BA4C006BBF21 /* AchievementsFactory.swift */,
+				7FF751EC21E2BB940062C600 /* Structs.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -201,6 +212,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		7FF751EB21E2A17A0062C600 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7F11EDDB21E1B2DF006BBF21 /* Achievements */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7FF751EF21E2C9590062C600 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF751F021E2C9590062C600 /* SDWebImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +238,7 @@
 				7F11EDB421E1B0F0006BBF21 /* Sources */,
 				7F11EDB521E1B0F0006BBF21 /* Frameworks */,
 				7F11EDB621E1B0F0006BBF21 /* Resources */,
+				7FF751EE21E2C92D0062C600 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -284,6 +312,7 @@
 			files = (
 				7F11EDC621E1B0F2006BBF21 /* LaunchScreen.storyboard in Resources */,
 				7F11EE1521E1C7F4006BBF21 /* achievements.json in Resources */,
+				7FF751FB21E2E5830062C600 /* Localizable.strings in Resources */,
 				7F11EDC321E1B0F2006BBF21 /* Assets.xcassets in Resources */,
 				7F11EDC121E1B0F0006BBF21 /* Main.storyboard in Resources */,
 				7FF751E021E1ED6A0062C600 /* AchievementCell.xib in Resources */,
@@ -295,10 +324,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F11EE1621E1C7F4006BBF21 /* achievements.json in Resources */,
+				7FF751FC21E2E5830062C600 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FF751EE21E2C92D0062C600 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F11EDB421E1B0F0006BBF21 /* Sources */ = {
@@ -307,12 +358,12 @@
 			files = (
 				7F11EE0421E1BA4C006BBF21 /* AchievementsFactory.swift in Sources */,
 				7F11EE0921E1C452006BBF21 /* Header.swift in Sources */,
+				7FF751ED21E2BB940062C600 /* Structs.swift in Sources */,
 				7F11EDF021E1B326006BBF21 /* AchievementsRouter.swift in Sources */,
 				7F11EDEE21E1B326006BBF21 /* AchievementsPresenter.swift in Sources */,
 				7F11EDFF21E1B8AE006BBF21 /* Achievement.swift in Sources */,
 				7F11EDBC21E1B0F0006BBF21 /* AppDelegate.swift in Sources */,
 				7F11EDF621E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
-				7FF751E321E1EEB70062C600 /* TableViewController.swift in Sources */,
 				7F11EDF221E1B326006BBF21 /* AchievementsViewController.swift in Sources */,
 				7FF751DF21E1ED6A0062C600 /* AchievementCell.swift in Sources */,
 				7F11EE1121E1C7C1006BBF21 /* JSONFormatter.swift in Sources */,
@@ -324,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF751F721E2E0C00062C600 /* Structs.swift in Sources */,
 				7F11EE1221E1C7C1006BBF21 /* JSONFormatter.swift in Sources */,
 				7F11EE0721E1BEDC006BBF21 /* AchievementsFactoryTests.swift in Sources */,
 				7F11EDF721E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
@@ -369,6 +421,14 @@
 				7F11EDC521E1B0F2006BBF21 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7FF751FE21E2E5830062C600 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FF751FD21E2E5830062C600 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -496,6 +556,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SmartInvesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,6 +578,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SmartInvesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -533,6 +601,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SmartInvestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,6 +626,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SmartInvestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

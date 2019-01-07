@@ -52,4 +52,17 @@ class AchievementsInteractorTests: XCTestCase {
         XCTAssertTrue((sut?.accessible)!, "Achievement should be accessible")
     }
     
+    func test_getTitle_ShouldReturn_Valid_Header_Object() {
+        /// Given
+        var sut: Header?
+        let interactor = AchievementsInteractor()
+        
+        /// When
+        sut = interactor.getHeader()
+        
+        /// Then
+        XCTAssertNotNil(sut, "Header object should not be nil")
+        XCTAssertEqual(sut?.getTitle(), "Smart Investing", "Title should match")
+    }
+    
 }
