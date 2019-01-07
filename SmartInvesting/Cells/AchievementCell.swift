@@ -10,6 +10,8 @@ import UIKit
 
 class AchievementCell: UITableViewCell {
     
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     @IBOutlet weak var mainContainer: UIStackView!
     @IBOutlet weak var containerLevel: UIView!
     @IBOutlet weak var bgImage: UIImageView!
@@ -44,6 +46,6 @@ class AchievementCell: UITableViewCell {
         self.isUserInteractionEnabled = false
         let hiddenAlpha: CGFloat = 0.4
         bgImage.alpha = hiddenAlpha
-        mainContainer.alpha = hiddenAlpha
+        mainContainer.alpha = hiddenAlpha + 0.3
     }
 }

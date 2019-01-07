@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class AchievementsViewController: UITableViewController, AchievementsViewProtocol {
 
@@ -26,7 +27,6 @@ class AchievementsViewController: UITableViewController, AchievementsViewProtoco
         configureTableView()
         setUpAchievementsTable()
     }
-
 }
 
 //MARK: Viper Methods -
@@ -46,6 +46,8 @@ extension AchievementsViewController {
     func configureTableView() {
         let nib = UINib(nibName: "AchievementCell", bundle: .main)
         tableView.register(nib, forCellReuseIdentifier: "achievementCell")
+        tableView.tableFooterView = UIView()
+        tableView.separatorStyle = .none
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -62,19 +64,14 @@ extension AchievementsViewController {
         
         let achievement = achievements[indexPath.item]
         
-        print(achievement.id)
+        cell.activity.startAnimating()
+        cell.activity.hidesWhenStopped = true
         
-        // Configure the cell...
-        //cell.image.sd_setImage(with: currentPromotion?.imageUrl, placeholderImage: UIImage(named: "placeholder.png"))
-        
-        /// TODO: ADD PLACE HOLDER IN THE CELL
-        
-        /// TODO: CATCH THE COMPLETION BLOCK AND THEN ONLY THEN UPDATE THE REST OF THE UI ELEMENTS IN THE CELL
-        cell.mainContainer.isHidden = false
-        
-        /// TODO: FIRST PRIORITY SET UP THE IMAGE
-        
-        /// TODO: IF THE 'accesible' PROPERTY IS DISABLED THEN CELL IS FADED IN GRAY AND NOT ENABLE FOR USER INTERACTION
+        cell.bgImage.sd_setImage(with: achievement.bg_image_url,
+                                 placeholderImage: nil,
+                                 options: .highPriority) { (image, error, cache, url) in
+                                    cell.activity.stopAnimating()
+        }
         
         cell.level.text = achievement.level
         cell.progressLevel.text = String(achievement.progress) + "pts" //localize this string
@@ -92,15 +89,7 @@ extension AchievementsViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 240.0
     }
-    
-    /// TODO: REMOVE CELLS BELLOW LAST CELL
-    
-    /// TODO: REMOVE CELL SEPARATOR LINES
-    
-    /// TODO: IN THE CELL ... ROUND THE CORNERS
-  
 }
-
 
 extension AchievementsViewController {
     func configureHeader() {
