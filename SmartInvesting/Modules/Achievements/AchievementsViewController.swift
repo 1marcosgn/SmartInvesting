@@ -57,7 +57,6 @@ extension AchievementsViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return achievements.count
     }
-    
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.achievementCell, for: indexPath) as! AchievementCell
@@ -74,8 +73,8 @@ extension AchievementsViewController {
         }
         
         cell.level.text = achievement.level
-        cell.progressLevel.text = String(achievement.progress) + "pts" //localize this string
-        cell.totalLevel.text = String(achievement.total) + "pts" //localize this string
+        cell.progressLevel.text = String(achievement.progress) + NSLocalizedString("achievement.label.points", comment: "")
+        cell.totalLevel.text = String(achievement.total) + NSLocalizedString("achievement.label.points", comment: "")
         
         let theProgress: Float = Float(achievement.progress) / Float(achievement.total)
         cell.updateProgressBarWith(theProgress)
@@ -97,11 +96,9 @@ extension AchievementsViewController {
         navigationController?.navigationBar.barTintColor = Colors.stashPurple
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        
         guard let titleHeader = presenter?.getHeader() else {
             return
         }
-        
         navigationController?.navigationBar.topItem?.title = titleHeader.getTitle()
     }
     

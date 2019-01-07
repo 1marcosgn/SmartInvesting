@@ -43,9 +43,10 @@
 		7FF751E821E2923A0062C600 /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */; };
 		7FF751ED21E2BB940062C600 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751EC21E2BB940062C600 /* Structs.swift */; };
 		7FF751F121E2C9590062C600 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF751F021E2C9590062C600 /* SDWebImage.framework */; };
-		7FF751F521E2CC000062C600 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751F421E2CC000062C600 /* placeholder.png */; };
 		7FF751F621E2E0850062C600 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF751F021E2C9590062C600 /* SDWebImage.framework */; };
 		7FF751F721E2E0C00062C600 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751EC21E2BB940062C600 /* Structs.swift */; };
+		7FF751FB21E2E5830062C600 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751FE21E2E5830062C600 /* Localizable.strings */; };
+		7FF751FC21E2E5830062C600 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751FE21E2E5830062C600 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +89,7 @@
 		7FF751E721E2923A0062C600 /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
 		7FF751EC21E2BB940062C600 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		7FF751F021E2C9590062C600 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
-		7FF751F421E2CC000062C600 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		7FF751FD21E2E5830062C600 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +144,7 @@
 				7F11EDC221E1B0F2006BBF21 /* Assets.xcassets */,
 				7F11EDC421E1B0F2006BBF21 /* LaunchScreen.storyboard */,
 				7F11EDC721E1B0F2006BBF21 /* Info.plist */,
+				7FF751FE21E2E5830062C600 /* Localizable.strings */,
 			);
 			path = SmartInvesting;
 			sourceTree = "<group>";
@@ -196,7 +198,6 @@
 		7F11EE1321E1C7D2006BBF21 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7FF751F421E2CC000062C600 /* placeholder.png */,
 				7F11EE1421E1C7F4006BBF21 /* achievements.json */,
 			);
 			path = Resources;
@@ -310,8 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F11EDC621E1B0F2006BBF21 /* LaunchScreen.storyboard in Resources */,
-				7FF751F521E2CC000062C600 /* placeholder.png in Resources */,
 				7F11EE1521E1C7F4006BBF21 /* achievements.json in Resources */,
+				7FF751FB21E2E5830062C600 /* Localizable.strings in Resources */,
 				7F11EDC321E1B0F2006BBF21 /* Assets.xcassets in Resources */,
 				7F11EDC121E1B0F0006BBF21 /* Main.storyboard in Resources */,
 				7FF751E021E1ED6A0062C600 /* AchievementCell.xib in Resources */,
@@ -323,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F11EE1621E1C7F4006BBF21 /* achievements.json in Resources */,
+				7FF751FC21E2E5830062C600 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +421,14 @@
 				7F11EDC521E1B0F2006BBF21 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7FF751FE21E2E5830062C600 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FF751FD21E2E5830062C600 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

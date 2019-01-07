@@ -19,6 +19,7 @@ protocol AchievementsPresenterProtocol: class {
 
     var interactor: AchievementsInteractorInputProtocol? { get set }
     
+    /// Returns an array of achievements
     func retrieveAchievements() -> [Achievement]?
     
     /// Returns the title for the header
@@ -36,6 +37,7 @@ protocol AchievementsInteractorInputProtocol: class {
     var presenter: AchievementsInteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
+    /// Returns an array of achievements
     func getAchievements() -> [Achievement]?
     
     /// Returns a formatted title
@@ -44,10 +46,8 @@ protocol AchievementsInteractorInputProtocol: class {
 
 //MARK: View -
 protocol AchievementsViewProtocol: class {
-
-    var presenter: AchievementsPresenterProtocol?  { get set }
-
     /* Presenter -> ViewController */
+    var presenter: AchievementsPresenterProtocol?  { get set }
 }
 
 protocol AchievementProtocol {

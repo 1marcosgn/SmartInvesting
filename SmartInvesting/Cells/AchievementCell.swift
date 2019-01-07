@@ -23,7 +23,6 @@ class AchievementCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         setUpCellUI()
     }
     

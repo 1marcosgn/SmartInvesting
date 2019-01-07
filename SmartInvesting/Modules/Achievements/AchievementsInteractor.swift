@@ -36,7 +36,6 @@ class AchievementsInteractor: AchievementsInteractorInputProtocol {
     }
     
     func getHeader() -> Header? {
-        /// Get the information from local json
         guard let dictionaryFromFile = JSONFormatter.parseWith(file: Constants.achievements) else {
             return nil
         }
