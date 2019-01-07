@@ -34,4 +34,14 @@ class AchievementsInteractor: AchievementsInteractorInputProtocol {
         
         return achievements
     }
+    
+    func getHeader() -> Header? {
+        /// Get the information from local json
+        guard let dictionaryFromFile = JSONFormatter.parseWith(file: "achievements") else {
+            return nil
+        }
+        
+        let header = Header(dictionaryFromFile)
+        return header
+    }
 }

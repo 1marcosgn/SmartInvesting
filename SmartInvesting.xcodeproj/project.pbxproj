@@ -45,6 +45,8 @@
 		7FF751ED21E2BB940062C600 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751EC21E2BB940062C600 /* Structs.swift */; };
 		7FF751F121E2C9590062C600 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF751F021E2C9590062C600 /* SDWebImage.framework */; };
 		7FF751F521E2CC000062C600 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FF751F421E2CC000062C600 /* placeholder.png */; };
+		7FF751F621E2E0850062C600 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF751F021E2C9590062C600 /* SDWebImage.framework */; };
+		7FF751F721E2E0C00062C600 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF751EC21E2BB940062C600 /* Structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF751F621E2E0850062C600 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF751F721E2E0C00062C600 /* Structs.swift in Sources */,
 				7F11EE1221E1C7C1006BBF21 /* JSONFormatter.swift in Sources */,
 				7F11EE0721E1BEDC006BBF21 /* AchievementsFactoryTests.swift in Sources */,
 				7F11EDF721E1B326006BBF21 /* AchievementsInteractor.swift in Sources */,
@@ -591,6 +595,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SmartInvestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -612,6 +620,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SmartInvestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -20,6 +20,9 @@ protocol AchievementsPresenterProtocol: class {
     var interactor: AchievementsInteractorInputProtocol? { get set }
     
     func retrieveAchievements() -> [Achievement]?
+    
+    /// Returns the title for the header
+    func getHeader() -> Header?
 }
 
 //MARK: Interactor -
@@ -34,6 +37,9 @@ protocol AchievementsInteractorInputProtocol: class {
 
     /* Presenter -> Interactor */
     func getAchievements() -> [Achievement]?
+    
+    /// Returns a formatted title
+    func getHeader() -> Header?
 }
 
 //MARK: View -

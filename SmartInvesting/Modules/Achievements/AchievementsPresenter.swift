@@ -25,4 +25,8 @@ class AchievementsPresenter: AchievementsPresenterProtocol, AchievementsInteract
     func retrieveAchievements() -> [Achievement]? {
         return interactor?.getAchievements()
     }
+    
+    func getHeader() -> Header? {
+        return interactor?.getHeader()
+    }
 }

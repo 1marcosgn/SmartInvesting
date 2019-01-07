@@ -96,6 +96,13 @@ extension AchievementsViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = Colors.stashPurple
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        
+        guard let titleHeader = presenter?.getHeader() else {
+            return
+        }
+        
+        navigationController?.navigationBar.topItem?.title = titleHeader.getTitle()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
